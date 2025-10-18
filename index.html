@@ -1,46 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/png" href="/graphics/favicon_black.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TJ Nanotechnology Club</title>
-
-    <!-- SEO Information -->
-    <meta name="description" content="TJHSST Nanotechnology Club - one of the top nanotech clubs in the nation. Learn, build projects, and connect with others alike." />
-    <meta name="keywords" content="TJHSST Nanotechnology Club, TJHSST Nanotech Club, Thomas Jefferson, nanotech, engineering, computer science, programming" />
-    <meta name="author" content="TJHSST Nanotechnology Club" />
-    <link rel="canonical" href="https://tj-nanotech.github.io/" />
-    <meta name="robots" content="index, follow" />
-    <meta name="referrer" content="strict-origin-when-cross-origin" />
-
+ <head>
+  <meta charset="utf-8"/>
+  <link href="/graphics/favicon_black.png" rel="icon" type="image/png"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   TJ Nanotechnology Club
+  </title>
+  <!-- SEO Information -->
+  <meta content="TJHSST Nanotechnology Club - one of the top nanotech clubs in the nation. Learn, build projects, and connect with others alike." name="description">
+   <meta content="TJHSST Nanotechnology Club, TJHSST Nanotech Club, Thomas Jefferson, nanotech, engineering, computer science, programming" name="keywords">
+    <meta content="TJHSST Nanotechnology Club" name="author"/>
+    <link href="https://tj-nanotech.github.io/" rel="canonical"/>
+    <meta content="index, follow" name="robots"/>
+    <meta content="strict-origin-when-cross-origin" name="referrer"/>
     <!-- open graph -->
-    <meta property="og:title" content="TJHSST Nanotechnology Club" />
-    <meta property="og:description" content="TJHSST Nanotechnology Club - one of the top nanotech clubs in the nation. Learn, build projects, and connect with others alike." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://tj-nanotech.github.io/" />
-    <meta property="og:site_name" content="TJHSST Nanotechnology Club" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:image" content="https://tj-nanotech.github.io/graphics/banner1.jpg" />
-    <meta property="og:image:secure_url" content="https://tj-nanotech.github.io/graphics/banner1.jpg" />
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:alt" content="TJHSST Nanotechnology Club logo" />
-
+    <meta content="TJHSST Nanotechnology Club" property="og:title"/>
+    <meta content="TJHSST Nanotechnology Club - one of the top nanotech clubs in the nation. Learn, build projects, and connect with others alike." property="og:description"/>
+    <meta content="website" property="og:type"/>
+    <meta content="https://tj-nanotech.github.io/" property="og:url"/>
+    <meta content="TJHSST Nanotechnology Club" property="og:site_name"/>
+    <meta content="en_US" property="og:locale"/>
+    <meta content="https://tj-nanotech.github.io/graphics/banner1.jpg" property="og:image"/>
+    <meta content="https://tj-nanotech.github.io/graphics/banner1.jpg" property="og:image:secure_url"/>
+    <meta content="image/png" property="og:image:type"/>
+    <meta content="TJHSST Nanotechnology Club logo" property="og:image:alt"/>
     <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:domain" content="tj-nanotech.github.io">
-    <meta property="twitter:url" content="https://tj-nanotech.github.io/">
-    <meta name="twitter:title" content="TJHSST Nanotechnology Club">
-    <meta name="twitter:description" content="TJHSST Nanotechnology Club - one of the top nanotech clubs in the nation. Learn, build projects, and connect with others alike.">
-    <meta name="twitter:image" content="https://tj-nanotech.github.io/graphics/banner1.jpg">
-
+    <meta content="summary_large_image" name="twitter:card"/>
+    <meta content="tj-nanotech.github.io" property="twitter:domain"/>
+    <meta content="https://tj-nanotech.github.io/" property="twitter:url"/>
+    <meta content="TJHSST Nanotechnology Club" name="twitter:title"/>
+    <meta content="TJHSST Nanotechnology Club - one of the top nanotech clubs in the nation. Learn, build projects, and connect with others alike." name="twitter:description"/>
+    <meta content="https://tj-nanotech.github.io/graphics/banner1.jpg" name="twitter:image"/>
     <!-- Flaticon CSS -->
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link href="https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css" rel="stylesheet"/>
     <!-- External CSS -->
-    <link rel="stylesheet" href="/graphics/index.css">
-    
+    <link href="/graphics/index.css" rel="stylesheet"/>
     <script>
-        window.isMobile = function(){
+     window.isMobile = function(){
             return window.matchMedia("(any-hover:none) and (max-width: 768px)").matches;
         };
         
@@ -59,99 +56,237 @@
         window.addEventListener('DOMContentLoaded', updateLayout);
         window.addEventListener('resize', updateLayout);
     </script>
-
-</head>
-<body>
-    <img src="/graphics/logo_black.png" alt="TJ Nanotechnology Club Logo" class="logo">
-
-    <div class="container">
-        <div class="header">
-            <div class="star-icon">
-                <i class="fi fi-ss-user"></i>
-            </div>
-
-            <h1>Officers</h1>
-        </div>
-        <p class="subtitle">Meet the minds behind TJ Nanotech</p>
-
-        <div class="members-grid">
-            <div class="member-card">
-                <div class="avatar">
-                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-                    </svg>
-                </div>
-                <h3 class="member-name">Kameron Lee</h3>
-                <p class="member-role">Blank</p>
-            </div>
-
-            <div class="member-card">
-                <div class="avatar">
-                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-                    </svg>
-                </div>
-                <h3 class="member-name">Srihith Layagala</h3>
-                <p class="member-role">Blank</p>
-            </div>
-
-            <div class="member-card">
-                <div class="avatar">
-                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-                    </svg>
-                </div>
-                <h3 class="member-name">Matthew Peng</h3>
-                <p class="member-role">Blank</p>
-            </div>
-
-            <div class="member-card">
-                <div class="avatar">
-                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-                    </svg>
-                </div>
-                <h3 class="member-name">Andrew Gao</h3>
-                <p class="member-role">Blank</p>
-            </div>
-
-            <div class="member-card">
-                <div class="avatar">
-                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-                    </svg>
-                </div>
-                <h3 class="member-name">Jack Oliver</h3>
-                <p class="member-role">Blank</p>
-            </div>
-
-            <div class="member-card">
-                <div class="avatar">
-                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-                    </svg>
-                </div>
-                <h3 class="member-name">Ronald Ganzorig</h3>
-                <p class="member-role">Blank</p>
-            </div>
-        </div>
-
-        <div class="join-card">
-            <div class="grad-icon">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/>
-                </svg>
-            </div>
-            <h2>Interested in joining our team?</h2>
-            <p>Come to our Wednesday 8A sessions every week to find more information.</p>
-            <a href="https://ion.tjhsst.edu/eighth/activity/118" 
-            class="join-btn" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            style="display: inline-block; text-decoration: none;">
-                Learn more
-            </a>
-        </div>
+   </meta>
+  </meta>
+ </head>
+ <body>
+  <nav aria-label="Primary" class="site-nav" role="navigation">
+   <div class="nav-inner">
+    <div class="nav-left">
+        <a class="brand" href="/">
+            <img class="brand-logo" src="/graphics/logo_black.png" alt="TJ Nanotechnology Club logo" width="32" height="32">
+            <span class="brand-text">TJ Nanotechnology</span>
+        </a>
     </div>
-</body>
+    <div class="nav-right">
+     <ul class="nav-links" role="menubar">
+      <li role="none">
+       <a href="#" role="menuitem">
+        Home
+       </a>
+      </li>
+      <li role="none">
+       <a href="#" role="menuitem">
+        Courses
+       </a>
+      </li>
+      <li role="none">
+       <a href="#" role="menuitem">
+        Officers
+       </a>
+      </li>
+      <li role="none">
+       <a href="#" role="menuitem">
+        FAQ
+       </a>
+      </li>
+     </ul>
+    <a aria-label="Sign up" class="btn-signup" target="_blank" rel="noopener noreferrer"
+    href="https://ion.tjhsst.edu/eighth/activity/118">
+    Sign up
+    </a>
+     <button aria-controls="mobile-drawer" aria-expanded="false" aria-label="Open menu" class="hamburger">
+      <span class="bar">
+      </span>
+      <span class="bar">
+      </span>
+      <span class="bar">
+      </span>
+     </button>
+    </div>
+   </div>
+   <div class="drawer" hidden="" id="mobile-drawer">
+    <ul class="drawer-links">
+     <li>
+      <a href="#">
+       Home
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       Courses
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       Officers
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       FAQ
+      </a>
+     </li>
+    </ul>
+        <a aria-label="Sign up (mobile)" class="btn-signup drawer-cta" target="_blank" rel="noopener noreferrer"
+        href="https://ion.tjhsst.edu/eighth/activity/118">
+        Sign up
+        </a>
+   </div>
+  </nav>
+  <div class="container">
+   <div class="header">
+    <div class="star-icon">
+     <i class="fi fi-ss-user">
+     </i>
+    </div>
+    <h1>
+     Officers
+    </h1>
+   </div>
+   <p class="subtitle">
+    Meet the minds behind TJ Nanotech
+   </p>
+   <div class="members-grid">
+    <div class="member-card">
+     <div class="avatar">
+      <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+       <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z">
+       </path>
+      </svg>
+     </div>
+     <h3 class="member-name">
+      Kameron Lee
+     </h3>
+     <p class="member-role">
+      Blank
+     </p>
+    </div>
+    <div class="member-card">
+     <div class="avatar">
+      <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+       <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z">
+       </path>
+      </svg>
+     </div>
+     <h3 class="member-name">
+      Srihith Layagala
+     </h3>
+     <p class="member-role">
+      Blank
+     </p>
+    </div>
+    <div class="member-card">
+     <div class="avatar">
+      <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+       <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z">
+       </path>
+      </svg>
+     </div>
+     <h3 class="member-name">
+      Matthew Peng
+     </h3>
+     <p class="member-role">
+      Blank
+     </p>
+    </div>
+    <div class="member-card">
+     <div class="avatar">
+      <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+       <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z">
+       </path>
+      </svg>
+     </div>
+     <h3 class="member-name">
+      Andrew Gao
+     </h3>
+     <p class="member-role">
+      Blank
+     </p>
+    </div>
+    <div class="member-card">
+     <div class="avatar">
+      <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+       <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z">
+       </path>
+      </svg>
+     </div>
+     <h3 class="member-name">
+      Jack Oliver
+     </h3>
+     <p class="member-role">
+      Blank
+     </p>
+    </div>
+    <div class="member-card">
+     <div class="avatar">
+      <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+       <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z">
+       </path>
+      </svg>
+     </div>
+     <h3 class="member-name">
+      Ronald Ganzorig
+     </h3>
+     <p class="member-role">
+      Blank
+     </p>
+    </div>
+   </div>
+   <div class="join-card">
+    <div class="grad-icon">
+     <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z">
+      </path>
+     </svg>
+    </div>
+    <h2>
+     Interested in joining our team?
+    </h2>
+    <p>
+     Come to our Wednesday 8A sessions every week to find more information.
+    </p>
+    <a class="join-btn" href="https://ion.tjhsst.edu/eighth/activity/118" rel="noopener noreferrer" style="display: inline-block; text-decoration: none;" target="_blank">
+     Learn more
+    </a>
+   </div>
+  </div>
+  <script>
+   (function(){
+    const nav = document.querySelector('.site-nav');
+    const btn = nav.querySelector('.hamburger');
+    const drawer = nav.querySelector('.drawer');
+    const links = nav.querySelectorAll('.drawer a, .drawer button, .nav-links a');
+
+    function closeMenu(){
+      nav.classList.remove('open');
+      drawer.setAttribute('hidden', '');
+      btn.setAttribute('aria-expanded', 'false');
+    }
+
+    function openMenu(){
+      nav.classList.add('open');
+      drawer.removeAttribute('hidden');
+      btn.setAttribute('aria-expanded', 'true');
+    }
+
+    btn.addEventListener('click', function(e){
+      if(nav.classList.contains('open')) closeMenu(); else openMenu();
+    });
+
+    // Close on link click (mobile)
+    links.forEach(el => el.addEventListener('click', closeMenu));
+
+    // Close on window resize to desktop
+    window.addEventListener('resize', function(){
+      if(window.matchMedia('(min-width: 769px)').matches) closeMenu();
+    });
+
+    // Close when clicking outside
+    document.addEventListener('click', function(evt){
+      if(!nav.contains(evt.target)) closeMenu();
+    });
+  })();
+  </script>
+ </body>
 </html>
