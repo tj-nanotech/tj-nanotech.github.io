@@ -163,7 +163,7 @@ h1 {
     box-shadow: 0 8px 20px rgba(139, 92, 246, 0.4);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 825) {
     h1 {
         font-size: 2.5rem;
     }
@@ -179,3 +179,4 @@ h1 {
         gap: 20px;
     }
 }
+
