@@ -38,6 +38,27 @@
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css'>
     <!-- External CSS -->
     <link rel="stylesheet" href="/graphics/index.css">
+    
+    <script>
+        window.isMobile = function(){
+            return window.matchMedia("(any-hover:none) and (max-width: 768px)").matches;
+        };
+        
+        // Apply mobile class on load and resize
+        function updateLayout() {
+            const grid = document.querySelector('.members-grid');
+            if (grid) {
+                if (window.isMobile()) {
+                    grid.classList.add('mobile-layout');
+                } else {
+                    grid.classList.remove('mobile-layout');
+                }
+            }
+        }
+        
+        window.addEventListener('DOMContentLoaded', updateLayout);
+        window.addEventListener('resize', updateLayout);
+    </script>
 
 </head>
 <body>
