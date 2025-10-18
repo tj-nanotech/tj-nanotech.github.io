@@ -64,6 +64,11 @@ h1 {
     margin-bottom: 40px;
 }
 
+.members-grid.mobile-layout {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 20px;
+}
+
 .member-card {
     background: white;
     border-radius: 20px;
@@ -163,7 +168,7 @@ h1 {
     box-shadow: 0 8px 20px rgba(139, 92, 246, 0.4);
 }
 
-@media (max-width: 825px) {
+@media (max-width: 768px) {
     h1 {
         font-size: 2.5rem;
     }
@@ -172,23 +177,5 @@ h1 {
         width: 60px;
         height: 60px;
         font-size: 30px;
-    }
-
-
-    .members-grid.mobile-layout {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
-
-    @media (max-width: 768px) {
-        h1 {
-            font-size: 2.5rem;
-        }
-
-        .star-icon {
-            width: 60px;
-            height: 60px;
-            font-size: 30px;
-        }
     }
 }
