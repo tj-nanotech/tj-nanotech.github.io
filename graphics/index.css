@@ -376,3 +376,278 @@ body.has-topbar{ padding-top: 40px; }
 .inline-link:hover{
   opacity: .9;
 }
+/* === Fixed footer, no transitions === */
+.site-footer{
+  width: 100vw;
+  background: #ffffff;
+  border-top: 1px solid rgba(17,24,39,0.08);
+  box-shadow: 0 -8px 30px rgba(0,0,0,0.06);
+  margin: 60px -20px -40px;
+  padding: 16px 20px;
+}
+.site-footer.is-visible{ display: block; }
+
+.footer-inner{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 36px;
+}
+
+.footer-brand{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  color: #111827;
+  white-space: nowrap;
+  text-decoration: none;
+}
+.footer-logo{ width: 28px; height: 28px; object-fit: contain; border-radius: 6px; }
+.footer-title{ letter-spacing: .2px; }
+
+.footer-columns{
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(120px, 1fr));
+  gap: 28px;
+}
+
+.footer-col h4{
+  font-size: .95rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+.footer-col a{
+  display: block;
+  text-decoration: none;
+  color: #374151;
+  margin: 8px 0;
+}
+.footer-col a:hover{ color: #111827; }
+
+.footer-note{ color: #374151; line-height: 1.5; }
+
+/* Footer socials (Flaticon brand icons) */
+.footer-socials { display: flex; gap: 14px; align-items: center; }
+
+.footer-socials .fi {
+  font-size: 22px;        /* similar visual size as previous SVGs */
+  line-height: 1;
+  color: #374151;         /* default icon color */
+  display: block;
+}
+
+.footer-socials a:hover .fi {
+  color: #111827;         /* darker on hover */
+}
+
+@media (max-width: 768px){
+  .footer-inner{ flex-direction: column; gap: 16px; }
+  .footer-columns{ grid-template-columns: 1fr 1fr; gap: 16px; }
+}
+
+/* keep the old page content spacing under the fixed-width nav padding */
+body.has-topbar{ padding-top: 40px; }
+
+/* === IN THE CLASSROOM SECTION === */
+.classroom-section{
+  width: 100vw;
+  margin: 0 -20px 0;
+  padding: 60px 20px 80px;
+  background: linear-gradient(180deg, #fdf2f8 0%, #fce7f3 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.classroom-section::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-image: 
+    repeating-linear-gradient(
+      135deg,
+      transparent,
+      transparent 35px,
+      rgba(236, 72, 153, 0.04) 35px,
+      rgba(236, 72, 153, 0.04) 70px
+    );
+  pointer-events: none;
+}
+
+.classroom-inner{
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.classroom-icon-wrapper{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.classroom-icon{
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #f472b6 0%, #ec4899 50%, #d946ef 100%);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  color: white;
+}
+
+.classroom-heading{
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.classroom-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.classroom-image{
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(236, 72, 153, 0.15);
+}
+
+.classroom-image img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.classroom-details{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.classroom-item h3{
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 10px;
+}
+
+.classroom-item p{
+  color: #4b5563;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+/* === STUDENT REVIEWS SECTION === */
+.reviews-section{
+  width: 100vw;
+  margin: 0 -20px 60px;
+  padding: 60px 20px;
+  background: linear-gradient(180deg, #fce7f3 0%, #fbcfe8 100%);
+  position: relative;
+}
+
+.reviews-inner{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.reviews-heading{
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1f2937;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.reviews-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.review-card{
+  background: white;
+  border-radius: 20px;
+  padding: 35px;
+  box-shadow: 0 10px 30px rgba(236, 72, 153, 0.1);
+  position: relative;
+}
+
+.quote-icon{
+  font-size: 4rem;
+  font-weight: 700;
+  color: #ec4899;
+  line-height: 1;
+  margin-bottom: 15px;
+  font-family: Georgia, serif;
+}
+
+.review-text{
+  color: #374151;
+  line-height: 1.7;
+  font-size: 1.05rem;
+  margin-bottom: 20px;
+}
+
+.review-text strong{
+  color: #1f2937;
+  font-weight: 600;
+}
+
+.review-author{
+  color: #6b7280;
+  font-size: 0.95rem;
+  font-style: italic;
+}
+
+@media (max-width: 768px){
+  .classroom-heading{
+    font-size: 2.5rem;
+  }
+  
+  .classroom-content{
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+  
+  .classroom-icon{
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+  }
+  
+  .reviews-heading{
+    font-size: 2.5rem;
+  }
+  
+  .reviews-grid{
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+}
+
+.classroom-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 4px solid #ffffff;           /* white outline */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);  /* slight shadow */
+  border-radius: 20px;                 /* optional: soft corners to match style */
+}
