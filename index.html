@@ -34,6 +34,8 @@
     <meta content="https://tj-nanotech.github.io/graphics/banner1.jpg" name="twitter:image"/>
     <!-- Flaticon CSS -->
     <link href="https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css">
+
     <!-- External CSS -->
     <link href="/graphics/index.css" rel="stylesheet"/>
     <script>
@@ -58,9 +60,11 @@
     </script>
    </meta>
   </meta>
+  
  </head>
  <body>
-  <nav aria-label="Primary" class="site-nav" role="navigation">
+  
+  <nav aria-label="Primary" class="site-nav" role="navigation" id ="home">
    <div class="nav-inner">
     <div class="nav-left">
         <a class="brand" href="/">
@@ -71,17 +75,13 @@
     <div class="nav-right">
      <ul class="nav-links" role="menubar">
       <li role="none">
-       <a href="#" role="menuitem">
+       <a href="#home" role="menuitem">
         Home
        </a>
       </li>
+
       <li role="none">
-       <a href="#" role="menuitem">
-        Resources
-       </a>
-      </li>
-      <li role="none">
-       <a href="#" role="menuitem">
+       <a href="#officers" role="menuitem">
         Officers
        </a>
       </li>
@@ -108,17 +108,13 @@
    <div class="drawer" hidden="" id="mobile-drawer">
     <ul class="drawer-links">
      <li>
-      <a href="#">
+      <a href="#home">
        Home
       </a>
      </li>
+
      <li>
-      <a href="#">
-       Resources
-      </a>
-     </li>
-     <li>
-      <a href="#">
+      <a href="#officers">
        Officers
       </a>
      </li>
@@ -134,8 +130,80 @@
         </a>
    </div>
   </nav>
+
+
+  <!-- === IN THE CLASSROOM SECTION === -->
+  <section class="classroom-section" id="classroom">
+    <div class="classroom-inner">
+      <div class="classroom-icon-wrapper">
+        <div class="classroom-icon">
+          <i class="fi fi-ss-graduation-cap"></i>
+        </div>
+      </div>
+      <h2 class="classroom-heading">In the club</h2>
+      
+      <div class="classroom-content">
+        <div class="classroom-image">
+          <img src="graphics/lecture.jpg" alt="Classroom activities">
+        </div>
+        
+        <div class="classroom-details">
+          <div class="classroom-item">
+            <h3>Bi-weekly meetings</h3>
+            <p>We meet bi-weekly (every two weeks) in Room 3 which is also the TJ chemistry lab. In the event of any room change, be sure to check Ion.</p>
+          </div>
+          
+          <div class="classroom-item">
+            <h3>Projects</h3>
+            <p>Our goal is to have each member complete a nanotechnology project start to finish.</p>
+          </div>
+          
+          <div class="classroom-item">
+            <h3>Community</h3>
+            <p>We have a strong community of like-minded individuals in the club. You can collaborate and make many friends here!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === STUDENT REVIEWS SECTION === -->
+  <section class="reviews-section">
+    <div class="reviews-inner">
+      <h2 class="reviews-heading">Testimonies</h2>
+      
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="quote-icon">"</div>
+          <p class="review-text">One of the only clubs at TJ that actually <strong>cares about its members.</strong></p>
+          <p class="review-author">- Active nanotech member</p>
+        </div>
+        
+        <div class="review-card">
+          <div class="quote-icon">"</div>
+          <p class="review-text">The classes are <strong>interesting and challenging</strong>. The teachers are also very attentive. The amount of content is <strong>just right for me to digest</strong> in the class.</p>
+          <p class="review-author">- Active nanotech member</p>
+        </div>
+        
+        <div class="review-card">
+          <div class="quote-icon">"</div>
+          <p class="review-text">The club taught me way more knowledge than I ever knew, it's like I <strong>unlocked my full potential</strong>. I like how the officers carefully explained each topic every meeting.</p>
+          <p class="review-author">- Active nanotech member</p>
+        </div>
+        
+        <div class="review-card">
+          <div class="quote-icon">"</div>
+          <p class="review-text">All of you are super nice and patient! Your lectures were <strong>clear to understand</strong> and the projects you had us do was fun! Thank you!</p>
+          <p class="review-author">- Active nanotech member</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
   <div class="container">
-   <div class="header">
+   <div class="header" id="officers">
     <div class="star-icon">
      <i class="fi fi-ss-user">
      </i>
@@ -317,5 +385,51 @@
     });
   })();
   </script>
+
+  <!-- Sentinel to trigger the footer and prevent overlap -->
+<div id="footer-sentinel" style="height: 160px;"></div>
+
+<footer class="site-footer" role="contentinfo" aria-label="Site footer">
+  <div class="footer-inner">
+    <!-- Brand (logo left of the title) -->
+    <a class="footer-brand" href="#home">
+      <img class="footer-logo" src="/graphics/logo_purple.png" alt="TJ Nanotechnology Club logo" width="28" height="28">
+      <span class="footer-title">TJ Nanotechnology Club</span>
+    </a>
+
+    <div class="footer-columns" aria-label="Footer links">
+      <div class="footer-col">
+        <h4>Quick links</h4>
+        <a href="#home">Home</a>
+        <a href="#officers">Officers</a>
+        <a href="#faq">FAQ</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <a href="https://ion.tjhsst.edu/eighth/activity/118" target="_blank" rel="noopener noreferrer">Sign up</a>
+        <a href="#if-you-see-this,-this-link-is-coming-soon!">Previous lectures</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Socials</h4>
+        <div class="footer-socials">
+          <a href="https://github.com/tj-nanotech" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i class="fi fi-brands-github" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.instagram.com/tjhsst_nanotechnology_club/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <i class="fi fi-brands-instagram" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p class="footer-note">Just message one of the officers!</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
  </body>
 </html>
