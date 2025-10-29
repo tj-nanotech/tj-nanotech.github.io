@@ -1,2 +1,2 @@
 # tj-nanotech.github.io/
-Site for TJ Nanotechnology Club
+Website for TJ Nanotechnology Club
