@@ -25,7 +25,7 @@ html, body { overflow-x: hidden; }
 body.has-topbar { padding-top: 40px; }
 
 .logo { max-width: 200px; margin: 0 auto 40px; display: block; }
-.container { max-width: 1200px; margin: 0 auto; }
+.container { max-width: 1050px; margin: 0 auto; }
 .header { display: contents; }
 
 h1 { font-size: 3rem; font-weight: 800; color: #1f2937; }
@@ -284,7 +284,7 @@ h1 { font-size: 3rem; font-weight: 800; color: #1f2937; }
 }
 
 /* === Unified section headers (icon above title) === */
-.section-header { display: flex; flex-direction: column; align-items: center; gap: 12px; text-align: center; margin-bottom: 20px; }
+.section-header { display: flex; flex-direction: column; align-items: left; gap: 12px; margin-bottom: 20px; }
 .section-icon {
   width: 80px; height: 80px; border-radius: 15px; display: flex; align-items: center; justify-content: center;
   font-size: 40px; color: #fff; background: linear-gradient(135deg, #0284c7, #0284c7);
@@ -304,7 +304,7 @@ h1 { font-size: 3rem; font-weight: 800; color: #1f2937; }
 /* === Page spacing between sections === */
 #about { margin-bottom: 96px; }
 #about .testimonies, #about .reviews, #about .testimonials { margin-bottom: 0; }
-#officers { margin-top: 160px; margin-bottom: 160px; }
+#officers { margin-top: 60px; margin-bottom: 160px; }
 #faq { margin-top: 0; }
 
 

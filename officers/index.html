@@ -59,7 +59,8 @@
         window.addEventListener('DOMContentLoaded', updateLayout);
         window.addEventListener('resize', updateLayout);
     </script>
-
+    
+<script defer src="/officers/officers.js"></script>
   
  </head>
  <body>
@@ -151,69 +152,10 @@
   <section id="officers" class="section-block">
     <div class="container">
       <div class="section-header">
-        <div class="section-icon officers-icon"><i class="fi fi-ss-user" aria-hidden="true"></i></div>
-        <h2 class="section-title">Officers</h2>
+        <h2 class="section-title">2025-26 Officers</h2>
       </div>
-      <p class="section-subtitle">Meet the minds behind TJ Nanotech</p>
 
-      <div class="members-grid">
-        <div class="member-card">
-         <div class="avatar">
-          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-           <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path>
-          </svg>
-         </div>
-         <h3 class="member-name">Kameron Lee</h3>
-         <p class="member-role">Chief Executive Officer</p>
-        </div>
-        <div class="member-card">
-         <div class="avatar">
-          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-           <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path>
-          </svg>
-         </div>
-         <h3 class="member-name">Srihith Layagala</h3>
-         <p class="member-role">Chief Communications Officer</p>
-        </div>
-        <div class="member-card">
-         <div class="avatar">
-          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-           <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path>
-          </svg>
-         </div>
-         <h3 class="member-name">Matthew Peng</h3>
-         <p class="member-role">Chief Financial Officer</p>
-        </div>
-        <div class="member-card">
-         <div class="avatar">
-          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-           <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path>
-          </svg>
-         </div>
-         <h3 class="member-name">Andrew Gao</h3>
-         <p class="member-role">Chief Operating Officer</p>
-        </div>
-        <div class="member-card">
-         <div class="avatar">
-          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-           <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path>
-          </svg>
-         </div>
-         <h3 class="member-name">Jack Oliver</h3>
-         <p class="member-role">Secretary</p>
-        </div>
-       <!--
-        <div class="member-card">
-         <div class="avatar">
-          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-           <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path>
-          </svg>
-         </div>
-         <h3 class="member-name">???</h3>
-         <p class="member-role">???</p>
-        </div>
-       -->
-      </div>
+    <div class="members-grid" data-src="/officers/officers.json"></div>
 
       <div class="join-card">
         <div class="grad-icon">
@@ -222,10 +164,10 @@
          </svg>
         </div>
         <h2>
-         Want to join our team?
+         Interested in joining our team?
         </h2>
         <p>
-         Come to our Wednesday 8A sessions to find out more.
+         Come to our Wednesday 8A sessions every week to find more information.
         </p>
         <a class="join-btn" href="https://ion.tjhsst.edu/eighth/activity/118" rel="noopener noreferrer" style="display: inline-block; text-decoration: none;" target="_blank">
          Sign up
@@ -282,17 +224,18 @@
   <div class="footer-inner">
     <!-- Brand (logo left of the title) -->
     <a class="footer-brand" href="#home">
+      <img class="footer-logo" src="/graphics/logos/logo_purple.png" alt="TJ Nanotechnology Club logo" width="28" height="28">
       <span class="footer-title">TJ Nanotechnology Club</span>
     </a>
 
     <div class="footer-columns" aria-label="Footer links">
       <div class="footer-col">
         <h4>Quick links</h4>
-        <a href="/">Home</a>
-        <a href="/lectures">Lectures</a>
+        <a href="#home">Home</a>
+        <a href="#about">About us</a>
 
-        <a href="/officers">Officers</a>
-        <a href="/faq">FAQ</a>
+        <a href="#officers">Officers</a>
+        <a href="#faq">FAQ</a>
       </div>
 
       <div class="footer-col">
